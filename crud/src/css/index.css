@@ -1,0 +1,88 @@
+/* index.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #141414; /* Fundo preto Netflix */
+    color: #e1e1e1; /* Texto cinza claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.matricula-container {
+    width: 90%;
+    max-width: 450px; /* Largura ajustada */
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto com transparência */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* Centralize o container verticalmente e horizontalmente */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.matricula-titulo {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: 20px;
+}
+
+#messageArea {
+    width: 100%;
+    max-width: 600px;
+    margin: 1rem auto;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.matricula-titulo.active {
+    border-bottom-color: #e50914; /* Vermelho Netflix ativo */
+}
+
+.matricula-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.matricula-form label {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.matricula-form input {
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #333;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    padding: 15px 25px;
+    background-color: #e50914; /* Vermelho Netflix */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.submit-btn:hover {
+    background-color: #c20710; /* Vermelho mais escuro no hover */
+}
+
+.hidden {
+    display: none;
+}
